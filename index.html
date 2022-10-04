@@ -7,7 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>“LevelUp”. Продукт для повышения потенции.</title>
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="libs/swiper/swiper-bundle.min.js" defer></script>
+  <script src="js/script.js" defer></script>
 </head>
 
 <body class="body">
@@ -113,35 +116,62 @@
   </section>
   <section class="section reviews">
     <div class="container">
-      <ul class="reviews__list">
-        <li class="client">
-          <img class="" src="img/doctor.png" alt="Фото клиента">
-          <h2 class="client__name">Christine Alexander</h2>
-          <p class="client__review">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, a&nbsp;culpa? Aut, nulla debitis! Sit
-            enim facilis illum, aperiam reprehenderit cumque reiciendis. Rerum quibusdam sequi aliquid quas&nbsp;in,
-            ab&nbsp;eveniet.
-          </p>
-        </li>
-        <li class="review">
-          <img class="" src="img/doctor.png" alt="Фото клиента">
-          <h2 class="client__name">Donna Garza</h2>
-          <p class="client__review">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, a&nbsp;culpa? Aut, nulla debitis! Sit
-            enim facilis illum, aperiam reprehenderit cumque reiciendis. Rerum quibusdam sequi aliquid quas&nbsp;in,
-            ab&nbsp;eveniet.
-          </p>
-        </li>
-        <li class="review">
-          <img class="" src="img/doctor.png" alt="Фото клиента">
-          <h2 class="client__name">Carolyn Cooper</h2>
-          <p class="client__review">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, a&nbsp;culpa? Aut, nulla debitis! Sit
-            enim facilis illum, aperiam reprehenderit cumque reiciendis. Rerum quibusdam sequi aliquid quas&nbsp;in,
-            ab&nbsp;eveniet.
-          </p>
-        </li>
-      </ul>
+      <h2 class="visually-hidden">Отзывы</h2>
+      <div class="reviews__wrap">
+        <button class="swiper__btn-prev btn-reset" aria-label="Предыдущий слайд">
+          <svg class="swiper__arrow-perv" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle r="36" transform="matrix(-1 0 0 1 36 36)" />
+            <path
+              d="M19.2929 36.7071C18.9024 36.3166 18.9024 35.6834 19.2929 35.2929L25.6569 28.9289C26.0474 28.5384 26.6805 28.5384 27.0711 28.9289C27.4616 29.3195 27.4616 29.9526 27.0711 30.3431L21.4142 36L27.0711 41.6569C27.4616 42.0474 27.4616 42.6805 27.0711 43.0711C26.6805 43.4616 26.0474 43.4616 25.6569 43.0711L19.2929 36.7071ZM52 37H20V35H52V37Z"
+              fill="#F5F2ED" />
+          </svg>
+        </button>
+        <div class="swiper">
+          <ul class="swiper-wrapper reviews__list list-reset">
+            <li class="reviews__item swiper-slide">
+              <article class="client">
+                <img class="client__photo" src="img/doctor.png" alt="Фото клиента">
+                <h3 class="client__name">Christine Alexander</h3>
+                <p class="client__review">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, a&nbsp;culpa? Aut, nulla debitis! Sit
+                  enim facilis illum, aperiam reprehenderit cumque reiciendis. Rerum quibusdam sequi aliquid quas&nbsp;in,
+                  ab&nbsp;eveniet.
+                </p>
+              </article>
+            </li>
+            <li class="reviews__item swiper-slide">
+              <article class="client">
+                <img class="client__photo" src="img/doctor.png" alt="Фото клиента">
+                <h3 class="client__name">Donna Garza</h3>
+                <p class="client__review">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, a&nbsp;culpa? Aut, nulla debitis! Sit
+                  enim facilis illum, aperiam reprehenderit cumque reiciendis. Rerum quibusdam sequi aliquid quas&nbsp;in,
+                  ab&nbsp;eveniet.
+                </p>
+              </article>
+            </li>
+            <li class="reviews__item swiper-slide">
+              <article class="client">
+                <img class="client__photo" src="img/doctor.png" alt="Фото клиента">
+                <h3 class="client__name">Carolyn Cooper</h3>
+                <p class="client__review">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, a&nbsp;culpa? Aut, nulla debitis! Sit
+                  enim facilis illum, aperiam reprehenderit cumque reiciendis. Rerum quibusdam sequi aliquid quas&nbsp;in,
+                  ab&nbsp;eveniet.
+                </p>
+              </article>
+            </li>
+          </ul>
+        </div>
+        <button class="swiper__btn-next btn-reset" aria-label="Следующий слайд">
+          <svg class="swiper__arrow-next" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle r="36" transform="matrix(-1 0 0 1 36 36)" />
+            <path
+              d="M19.2929 36.7071C18.9024 36.3166 18.9024 35.6834 19.2929 35.2929L25.6569 28.9289C26.0474 28.5384 26.6805 28.5384 27.0711 28.9289C27.4616 29.3195 27.4616 29.9526 27.0711 30.3431L21.4142 36L27.0711 41.6569C27.4616 42.0474 27.4616 42.6805 27.0711 43.0711C26.6805 43.4616 26.0474 43.4616 25.6569 43.0711L19.2929 36.7071ZM52 37H20V35H52V37Z"
+              fill="#F5F2ED" />
+          </svg>
+        </button>
+      </div>
     </div>
   </section>
   <section class="section promo-bottom">

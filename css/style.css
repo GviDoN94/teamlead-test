@@ -216,3 +216,56 @@ html {
 .compound__img {
   margin-bottom: 30px;
 }
+
+/* reviews */
+.reviews__wrap {
+  display: flex;
+  align-items: center;
+  padding: 0 100px;
+}
+
+.swiper__btn-prev,
+.swiper__btn-next {
+  color: var(--seance);
+}
+
+.swiper__btn-next {
+  transform: rotate(180deg);
+}
+
+.swiper__arrow-perv,
+.swiper__arrow-next {
+  width: 50px;
+  height: 50px;
+  fill: currentColor;
+}
+
+.reviews__item {
+  display: flex;
+  justify-content: center;
+}
+
+.client {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  max-width: 600px;
+}
+
+.client__photo {
+  margin-bottom: 50px;
+  width: 100%;
+  max-width: 200px;
+}
+
+.client__name {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.client__review {
+  margin: 0;
+}
