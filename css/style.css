@@ -4,6 +4,8 @@
   --silver: #cacaca;
   --black: #000;
   --red: #ff0000;
+  --heliotrope: #e32ce8;
+  --purple: #88098b;
 }
 
 html {
@@ -41,6 +43,18 @@ html {
 
   100% {
     transform: scale(1.2);
+  }
+}
+
+@media (min-width: 1025px) {
+  .link:hover:not(.focus-visible):not(:active),
+  .form__btn:hover:not(.focus-visible):not(:active) {
+    background-color: var(--heliotrope);
+  }
+
+  .swiper__btn-prev:hover:not(.focus-visible):not(:active),
+  .swiper__btn-next:hover:not(.focus-visible):not(:active) {
+    color: var(--heliotrope);
   }
 }
 
@@ -98,7 +112,6 @@ html {
 .link {
   display: inline-block;
   padding: 25px 80px;
-  border: 2px solid var(--seance);
   border-radius: 100px;
   outline: none;
   color: var(--white);
@@ -106,6 +119,7 @@ html {
   font-weight: 700;
   background-color: var(--seance);
   text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
 }
 
 /* promo */
@@ -247,6 +261,17 @@ html {
 .swiper__btn-prev,
 .swiper__btn-next {
   color: var(--seance);
+  transition: color 0.3s ease-in-out;
+}
+
+.swiper__btn-prev.focus-visible,
+.swiper__btn-next.focus-visible {
+  color: var(--heliotrope);
+}
+
+.swiper__btn-prev:active,
+.swiper__btn-next:active {
+  color: var(--purple);
 }
 
 .swiper__btn-next {
@@ -408,14 +433,16 @@ html {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 100px 0;
+  padding: 80px 0;
   width: calc(1000 / 1600 * 100%);
 }
 
 .form__input {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   padding: 10px 20px;
+  border: 2px solid var(--seance);
   border-radius: 100px;
+  outline: none;
   max-width: 500px;
   width: 100%;
   height: 80px;
@@ -430,11 +457,21 @@ html {
   display: inline-block;
   margin-top: auto;
   padding: 25px 80px;
-  border: 2px solid var(--seance);
   border-radius: 100px;
   outline: none;
   color: var(--white);
   font-size: 30px;
   font-weight: 700;
   background-color: var(--seance);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.link.focus-visible,
+.form__btn.focus-visible {
+  background-color: var(--heliotrope);
+}
+
+.link:active,
+.form__btn:active {
+  background-color: var(--purple);
 }
