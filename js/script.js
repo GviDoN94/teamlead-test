@@ -53,3 +53,8 @@ function updateTimer() {
   ]);
   time--;
 }
+
+/* enter only numbers */
+const inputTel = (document.querySelector(".form__phone").oninput = function () {
+  this.value = this.value.replace(/\D/, "");
+});

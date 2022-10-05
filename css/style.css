@@ -57,6 +57,10 @@ html {
   .swiper__btn-next:hover:not(.focus-visible):not(:active) {
     color: var(--heliotrope);
   }
+
+  .form__input:hover:not(.focus-visible) {
+    outline-color: var(--seance);
+  }
 }
 
 .body {
@@ -249,7 +253,7 @@ html {
 }
 
 .compound__img {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 /* reviews */
@@ -456,9 +460,19 @@ html {
   border: 2px solid var(--seance);
   border-radius: 100px;
   outline: none;
+  outline: 2px solid transparent;
   width: 100%;
   height: 80px;
   font-size: 25px;
+  transition: outline 0.3s ease-in-out;
+}
+
+.form__input::placeholder {
+  font-size: 25px;
+}
+
+.form__input.focus-visible {
+  outline-color: var(--seance);
 }
 
 .form__example {
@@ -475,10 +489,6 @@ html {
 .form__input.focus-visible + .form__example {
   visibility: visible;
   opacity: 1;
-}
-
-.form__input::placeholder {
-  font-size: 25px;
 }
 
 .form__btn {
