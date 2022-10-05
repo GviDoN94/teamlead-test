@@ -6,6 +6,7 @@
   --red: #ff0000;
   --heliotrope: #e32ce8;
   --purple: #88098b;
+  --yellow: #ecfb00;
 }
 
 html {
@@ -443,16 +444,37 @@ html {
   width: calc(1000 / 1600 * 100%);
 }
 
+.form__input-wrap {
+  position: relative;
+  margin-bottom: 40px;
+  max-width: 600px;
+  width: 100%;
+}
+
 .form__input {
-  margin-bottom: 30px;
   padding: 10px 20px;
   border: 2px solid var(--seance);
   border-radius: 100px;
   outline: none;
-  max-width: 500px;
   width: 100%;
   height: 80px;
   font-size: 25px;
+}
+
+.form__example {
+  position: absolute;
+  top: -25px;
+  right: 40px;
+  font-size: 20px;
+  color: var(--yellow);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.form__input.focus-visible + .form__example {
+  visibility: visible;
+  opacity: 1;
 }
 
 .form__input::placeholder {
