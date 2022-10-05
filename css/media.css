@@ -303,3 +303,138 @@
     padding-top: 50px;
   }
 }
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .section {
+    padding: 30px 0;
+  }
+
+  /* promo */
+  .title {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .promo__wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .promo__left {
+    margin: 0;
+    margin-bottom: 30px;
+    max-width: 150px;
+  }
+
+  .characteristics {
+    margin-bottom: 20px;
+  }
+
+  .characteristics__item {
+    font-size: 14px;
+  }
+
+  .characteristics__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  .promo__right {
+    align-items: center;
+  }
+
+  .link {
+    padding: 20px 80px;
+    font-size: 16px;
+  }
+
+  /* compounds */
+  .compound__container {
+    flex-direction: column;
+  }
+
+  /* reviews */
+  .reviews__wrap {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .swiper__btn-prev {
+    order: 1;
+  }
+
+  .swiper__btn-next {
+    order: 2;
+  }
+
+  .swiper {
+    width: 100%;
+  }
+
+  /* second promo */
+  .promo-second__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .promo__wrap {
+    margin-bottom: 30px;
+  }
+
+  .promo__descr {
+    text-align: center;
+    max-width: 400px;
+  }
+
+  .characteristics.characteristics--line {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .characteristics--line .characteristics__item:not(:last-child) {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  /* order */
+  .title--small {
+    margin-bottom: 20px;
+  }
+
+  .timer {
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+
+  .timer__value {
+    margin-bottom: 3px;
+  }
+
+  .timer__text {
+    font-size: 14px;
+  }
+
+  .order__content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card {
+    margin-bottom: 20px;
+  }
+
+  .form {
+    align-items: center;
+    padding: 0;
+    width: auto;
+  }
+
+  .form__input-wrap {
+    margin-bottom: 25px;
+    max-width: 400px;
+  }
+}

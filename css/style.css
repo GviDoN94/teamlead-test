@@ -271,6 +271,7 @@ html {
 .swiper__btn-next {
   color: var(--seance);
   transition: color 0.3s ease-in-out;
+  font-size: 0;
 }
 
 .swiper__btn-prev.focus-visible,
