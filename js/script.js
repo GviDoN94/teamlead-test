@@ -61,3 +61,19 @@ function updateTimer() {
 const inputTel = (document.querySelector(".form__phone").oninput = function () {
   this.value = this.value.replace(/\D/, "");
 });
+
+/* scroll */
+document.querySelectorAll(".js-scroll-link").forEach((link) => {
+  link.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    const href = this.getAttribute("href").substring(1);
+    const scrollTarget = document.getElementById(href);
+    const elementPosition = scrollTarget.getBoundingClientRect().top;
+
+    window.scrollBy({
+      top: elementPosition,
+      behavior: "smooth",
+    });
+  });
+});
