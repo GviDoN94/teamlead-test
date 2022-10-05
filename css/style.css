@@ -151,7 +151,8 @@ html {
 
 .promo__left {
   margin-right: 80px;
-  width: calc(350 / 1600 * 100%);
+  max-width: 350px;
+  width: 100%;
   font-size: 0;
 }
 
@@ -223,12 +224,13 @@ html {
   border: 1px solid var(--black);
   border-radius: 10px;
   max-width: 250px;
+  width: 100%;
   background-color: var(--silver);
 }
 
 .ingredient__img-wrap {
   margin-bottom: 20px;
-  padding: 25px;
+  padding: 10%;
   border-radius: 50%;
   height: 200px;
   background-color: var(--white);
@@ -250,10 +252,12 @@ html {
   flex-direction: column;
   align-items: center;
   align-self: center;
+  width: calc(300 / 1600 * 100%);
 }
 
 .compound__img {
   margin-bottom: 40px;
+  width: 100%;
 }
 
 /* reviews */
@@ -321,7 +325,7 @@ html {
   font-size: 25px;
 }
 
-/* promo second */
+/* second promo */
 .promo__wrap {
   margin-bottom: 70px;
 }
@@ -334,7 +338,7 @@ html {
   color: var(--white);
 }
 
-.characteristics--line {
+.characteristics.characteristics--line {
   display: flex;
   justify-content: space-between;
   padding: 0 100px;
@@ -395,7 +399,8 @@ html {
 .product-card {
   text-align: center;
   padding: 20px;
-  width: calc(350 / 1600 * 100%);
+  max-width: 350px;
+  width: 100%;
 }
 
 .product-card__img {

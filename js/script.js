@@ -39,17 +39,20 @@ function declOfNum(number, titles) {
 function updateTimer() {
   const minutes = Math.floor(time / 60);
   let seconds = time % 60;
+  if (minutes < 10) {
+    minutes = "0" + minutes;
+  }
   if (seconds < 10) {
     seconds = "0" + seconds;
   }
   minutesVal.textContent = minutes;
   secondsVal.textContent = seconds;
 
-  minutesText.textContent = declOfNum(minutes, ["минута", "минуты", "минут"]);
+  minutesText.textContent = declOfNum(minutes, ["Минута", "Минуты", "Минут"]);
   secondsText.textContent = declOfNum(seconds, [
-    "секунда",
-    "секунды",
-    "секунд",
+    "Секунда",
+    "Секунды",
+    "Секунд",
   ]);
   time--;
 }
