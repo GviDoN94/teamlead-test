@@ -361,7 +361,8 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 750px;
+  max-width: 600px;
+  width: 100%;
 }
 
 .timer__hours,
@@ -370,10 +371,15 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 110px;
 }
 
 .timer__value {
   margin-bottom: 10px;
+}
+
+.timer__text {
+  font-size: 25px;
 }
 
 .order__content {
