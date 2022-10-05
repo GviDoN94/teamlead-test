@@ -77,3 +77,48 @@ document.querySelectorAll(".js-scroll-link").forEach((link) => {
     });
   });
 });
+
+/* just-validate */
+const validation = new JustValidate(".form", {
+  errorFieldCssClass: "form__input--invalid",
+  errorLabelCssClass: "lable-invalid",
+});
+
+validation
+  .addField(".form__name", [
+    {
+      rule: "required",
+      errorMessage: "Введите имя",
+    },
+    {
+      rule: "minLength",
+      value: 2,
+      errorMessage: "Имя слишком короткое",
+    },
+    {
+      rule: "maxLength",
+      value: 30,
+      errorMessage: "Имя слишком длинное",
+    },
+    {
+      rule: "customRegexp",
+      value: /^[a-zа-яё]+(?: [a-zа-яё]+)?$/i,
+      errorMessage: "Неверный формат имени",
+    },
+  ])
+  .addField(".form__phone", [
+    {
+      rule: "required",
+      errorMessage: "Введите телефон",
+    },
+    {
+      rule: "minLength",
+      value: 11,
+      errorMessage: "Недостаточная длина",
+    },
+    {
+      rule: "maxLength",
+      value: 11,
+      errorMessage: "Превышена длина",
+    },
+  ]);

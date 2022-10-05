@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="css/media.css">
   <script src="libs/focus-visible/focus-visible.js" defer></script>
   <script src="libs/swiper/swiper-bundle.min.js" defer></script>
+  <script src="libs/just-validate/just-validate.min.js" defer></script>
   <script src="js/script.js" defer></script>
 </head>
 
@@ -52,35 +53,34 @@
       <h2 class="visually-hidden">Состав продукта</h2>
       <ul class="compound__list list-reset">
         <li class="compound__item">
-          <article class="ingredient">
+          <div class="ingredient">
             <div class="ingredient__img-wrap">
               <img class="ingredient__img" src="img/prod.png" alt="Первый ингридиент">
             </div>
             <p class="ingredient__descr">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, dolor nisi&nbsp;id
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit laboriosam maiores blanditiis quia voluptates modi qui! Quia sed accusamus corporis cupiditate magnam quisquam soluta, facilis cumque aliquid alias magni? Nam!
             </p>
-          </article>
+          </div>
         </li>
         <li class="compound__item">
-          <article class="ingredient">
+          <div class="ingredient">
             <div class="ingredient__img-wrap">
               <img class="ingredient__img" src="img/prod.png" alt="Второй ингридиент">
             </div>
             <p class="ingredient__descr">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, dolor nisi&nbsp;id
             </p>
-          </article>
+          </div>
         </li>
         <li class="compound__item">
-          <article class="ingredient">
+          <div class="ingredient">
             <div class="ingredient__img-wrap">
               <img class="ingredient__img" src="img/prod.png" alt="Второй ингридиент">
             </div>
             <p class="ingredient__descr">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, dolor nisi&nbsp;id
             </p>
-          </article>
+          </div>
         </li>
       </ul>
       <div class="compound__center">
@@ -89,34 +89,34 @@
       </div>
       <ul class="compound__list list-reset">
         <li class="compound__item">
-          <article class="ingredient">
+          <div class="ingredient">
             <div class="ingredient__img-wrap">
               <img class="ingredient__img" src="img/prod.png" alt="Первый ингридиент">
             </div>
             <p class="ingredient__descr">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, dolor nisi&nbsp;id
             </p>
-          </article>
+          </div>
         </li>
         <li class="compound__item">
-          <article class="ingredient">
+          <div class="ingredient">
             <div class="ingredient__img-wrap">
               <img class="ingredient__img" src="img/prod.png" alt="Второй ингридиент">
             </div>
             <p class="ingredient__descr">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, dolor nisi&nbsp;id
             </p>
-          </article>
+          </div>
         </li>
         <li class="compound__item">
-          <article class="ingredient">
+          <div class="ingredient">
             <div class="ingredient__img-wrap">
               <img class="ingredient__img" src="img/prod.png" alt="Второй ингридиент">
             </div>
             <p class="ingredient__descr">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, dolor nisi&nbsp;id
             </p>
-          </article>
+          </div>
         </li>
       </ul>
     </div>
@@ -187,8 +187,9 @@
       </div>
     </div>
   </section>
-  <section class="section promo promo-second">
+  <section class="section promo-second">
     <div class="container promo-second__container">
+      <h2 class="visually-hidden">Промо</h2>
       <div class="promo__wrap">
         <div class="promo__left">
           <img class="promo__img" src="img/doctor.png" alt="Фото врача с продуктом">
@@ -238,13 +239,13 @@
         </div>
       </div>
       <div class="order__content">
-        <article class="product-card">
+        <div class="product-card">
           <img class="product-card__img" src="img/prod.png" alt="Фото продукта LevelUp">
           <div class="product-card__price">
             <span class="product-card__old-price">10000 р.</span>
             <span class="product-card__new-price">5000 р.</span>
           </div>
-        </article>
+        </div>
         <form class="form" method="post">
           <div class="form__input-wrap">
             <input class="form__input form__name" type="text" name="username" placeholder="Имя*" autocomplete="off"
@@ -254,7 +255,7 @@
           <div class="form__input-wrap">
             <input class="form__input form__phone" type="tel" name="userphone" placeholder="Телефон*" autocomplete="off"
               required>
-            <span class="form__example">7 999 999 99 99</span>
+            <span class="form__example">7 (999) 999-99-99</span>
           </div>
           <button class="form__btn btn-reset" type="submit">Отправить заказ</button>
         </form>
